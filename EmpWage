@@ -1,0 +1,180 @@
+Admin@KrishnaComputer MINGW64 /
+$ ls -a
+./    cmd/  git-bash.exe*  mingw64/           nitanjali/        unins000.exe*
+../   dev/  git-cmd.exe*   proc/              tmp/          unins000.msg
+bin/  etc/  LICENSE.txt    ReleaseNotes.html  unins000.dat  usr/
+
+Admin@KrishnaComputer MINGW64 /
+$ cd nitanjali
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ git init
+Reinitialized existing Git repository in C:/Program Files/Git/nitanjali/.git/
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ git remote add employee https://github.com/nitacodingclub/assignment12.git
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ touch employee.txt
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ nano Employee.txt
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ cat employee.txt
+Welocome employee
+
+
+Admin@KrishnaComputer MINGW64 /nitanjali(master)
+$ cat employee.txt
+Welocome employee
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ git init
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ cat employee.txt git init
+Welocome employee
+cat: git: No such file or directory
+cat: init: No such file or directory
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ git init
+Reinitialized existing Git repository in C:/Program Files/Git/nitanjali/.git/
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ git remote add employee https://github.com/tejas3101995@gmail.com/assignment12.git
+fatal: remote employee already exists.
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ git commit -m"initial commit"
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    abc.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        abc.log
+        cef.olg
+        def.log
+        employee.txt
+        ghi.log
+        ghi.txt
+        jkl.txt
+        mno.log
+        rest/
+        xyz.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@KrishnaComputer MINGW64 /nitanjali(master)
+$ git add employee.txt
+warning: LF will be replaced by CRLF in employee.txt.
+The file will have its original line endings in your working directory
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ git config user.name "tejasgawande1019@gmail.com"
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ git config user.email "tejasgawande1019@gmail.com"
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ git push employee master
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (11/11), 940 bytes | 235.00 KiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/tejas1019/assignment12.git
+ * [new branch]      master -> master
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ git branch
+  branch1
+* master
+
+
+
+
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ git branch
+  branch1
+* master
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ git branch branch1
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$
+git branch
+
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ls
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ git branch git branch branch1
+usage: git branch [<options>] [-r | -a] [--merged | --no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --list            list branch names
+    --show-current        show current branch name
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ git branch
+  branch1
+* master
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ git branchls
+git: 'branchls' is not a git command. See 'git --help'.
+
+Admin@KrishnaComputer MINGW64 /nitanjali (master)
+$ git add employee.txt
